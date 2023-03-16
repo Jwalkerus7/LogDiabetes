@@ -4,15 +4,10 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Diabetes_LogModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'Diabetes_Log.dbo.Diabetes_Log' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+    <Schema Namespace="Diabetes_LogModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Diabetes_Log">
           <Key>
             <PropertyRef Name="ID" />
-            <PropertyRef Name="Date_Time" />
-            <PropertyRef Name="BK_Lunch_Dinner_Snack" />
-            <PropertyRef Name="Glucose_Number" />
           </Key>
           <Property Name="ID" Type="int" Nullable="false" />
           <Property Name="Date_Time" Type="datetime" Nullable="false" />
@@ -20,17 +15,9 @@ warning 6002: The table/view 'Diabetes_Log.dbo.Diabetes_Log' does not have a pri
           <Property Name="Glucose_Number" Type="int" Nullable="false" />
         </EntityType>
         <EntityContainer Name="Diabetes_LogModelStoreContainer">
-          <EntitySet Name="Diabetes_Log" EntityType="Self.Diabetes_Log" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [Diabetes_Log].[ID] AS [ID], 
-    [Diabetes_Log].[Date_Time] AS [Date_Time], 
-    [Diabetes_Log].[BK_Lunch_Dinner_Snack] AS [BK_Lunch_Dinner_Snack], 
-    [Diabetes_Log].[Glucose_Number] AS [Glucose_Number]
-    FROM [dbo].[Diabetes_Log] AS [Diabetes_Log]</DefiningQuery>
-          </EntitySet>
+          <EntitySet Name="Diabetes_Log" EntityType="Self.Diabetes_Log" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="Diabetes_LogModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
