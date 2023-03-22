@@ -131,23 +131,23 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LogDiabetesController.cs" />
-    <Compile Include="EntityModels\Diabetes_Log.cs">
-      <DependentUpon>LogDiabetes.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EntityModels\LogDiabetes.Context.cs">
+    <Compile Include="EntityModels\Diabetes_LogModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>LogDiabetes.Context.tt</DependentUpon>
+      <DependentUpon>Diabetes_LogModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="EntityModels\LogDiabetes.cs">
+    <Compile Include="EntityModels\Diabetes_LogModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>LogDiabetes.tt</DependentUpon>
+      <DependentUpon>Diabetes_LogModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="EntityModels\LogDiabetes.Designer.cs">
+    <Compile Include="EntityModels\Diabetes_LogModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>LogDiabetes.edmx</DependentUpon>
+      <DependentUpon>Diabetes_LogModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModels\Log_Diabetes.cs">
+      <DependentUpon>Diabetes_LogModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -171,15 +171,15 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
-    <Content Include="EntityModels\LogDiabetes.Context.tt">
+    <Content Include="EntityModels\Diabetes_LogModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>LogDiabetes.edmx</DependentUpon>
-      <LastGenOutput>LogDiabetes.Context.cs</LastGenOutput>
+      <DependentUpon>Diabetes_LogModel.edmx</DependentUpon>
+      <LastGenOutput>Diabetes_LogModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="EntityModels\LogDiabetes.tt">
+    <Content Include="EntityModels\Diabetes_LogModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>LogDiabetes.edmx</DependentUpon>
-      <LastGenOutput>LogDiabetes.cs</LastGenOutput>
+      <DependentUpon>Diabetes_LogModel.edmx</DependentUpon>
+      <LastGenOutput>Diabetes_LogModel.cs</LastGenOutput>
     </Content>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -194,12 +194,12 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\angular.min.js.map" />
-    <EntityDeploy Include="EntityModels\LogDiabetes.edmx">
+    <EntityDeploy Include="EntityModels\Diabetes_LogModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>LogDiabetes.Designer.cs</LastGenOutput>
+      <LastGenOutput>Diabetes_LogModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="EntityModels\LogDiabetes.edmx.diagram">
-      <DependentUpon>LogDiabetes.edmx</DependentUpon>
+    <Content Include="EntityModels\Diabetes_LogModel.edmx.diagram">
+      <DependentUpon>Diabetes_LogModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />

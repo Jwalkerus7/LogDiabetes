@@ -12,11 +12,13 @@ namespace LogDiabetes.EntityModels
     using System;
     using System.Collections.Generic;
     
-    public partial class Diabetes_Log
+    public partial class Log_Diabetes
     {
         public int ID { get; set; }
-        public System.DateTime Date_Time { get; set; }
-        public string BK_Lunch_Dinner_Snack { get; set; }
-        public int Glucose_Number { get; set; }
+        public System.DateTime Date { get; set; }
+        public string Before_Meal_Test { get; set; }
+        public string Meal_BK_L_D_S { get; set; }
+        public string What_Was_Eaten { get; set; }
+        public string Hours_After_Meal_Test { get; set; }
     }
 }

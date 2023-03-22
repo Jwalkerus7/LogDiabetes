@@ -25,6 +25,6 @@ namespace LogDiabetes.EntityModels
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Diabetes_Log> Diabetes_Log { get; set; }
+        public virtual DbSet<Log_Diabetes> Log_Diabetes { get; set; }
     }
 }
