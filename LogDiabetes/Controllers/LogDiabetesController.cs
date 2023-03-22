@@ -9,13 +9,15 @@ namespace LogDiabetes.Controllers
 {
     public class LogDiabetesController : Controller
     {
-       Diabetes_Log DL = new Diabetes_Log();
+       private readonly Diabetes_LogEntities db = new Diabetes_LogEntities();
 
         // GET: LogDiabetes
         public ActionResult Index()
         {
             return View();
         }
+
+
 
 
     }
